@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 요소 - 레이아웃</title>
+
+    <!-- 폰트2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <!-- font-family: 'Do Hyeon', sans-serif; -->
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0;}
+
+    body {
+        /* font-family: 'Noto Sans KR', sans-serif; */
+        font-family: 'Do Hyeon', sans-serif;
+    }
+
+    header {
+        background-color: lightgray;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    nav {
+        float: left;
+        width: 20px;
+        height: 300px;
+
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 80px;
+        background-color: #f1f1f1;
+        height: 300px;
+    }
+
+    section::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    footer {
+        background-color: bisque;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    /* 반응형 적용 - 가로 사이즈 600px 이하 */
+    @media screen and (max-width: 600px) {
+        nav,
+        article {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+
+</style>
+
+
+
+</head>
+<body>
+    <h1>semantic 태그를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li></li>
+            </ul>
+        </nav>
+        <article>
+        <h1>sbs 아카데미</h1>
+        <p>
+            장식하는 이것은 품었기 붙잡아 대중을 그들은 말이다. 그러므로 천지는 만물은 위하여, 두손을 하는 유소년에게서 아름다우냐? 쓸쓸한 가는 붙잡아 얼마나 미인을 찬미를 위하여서. 지혜는 자신과 청춘의 아름답고 그들의 위하여서. 무엇을 그들은 스며들어 커다란 새가 가진 얼마나 얼음이 교향악이다. 인생에 꽃이 같이, 우리는 같지 얼마나 얼음이 있는 그들은 철환하였는가? 같은 꽃이 찾아 작고 스며들어 이성은 새 이상은 있다.
+        </p>
+        <p>
+            장식하는 이것은 품었기 붙잡아 대중을 그들은 말이다. 그러므로 천지는 만물은 위하여, 두손을 하는 유소년에게서 아름다우냐? 쓸쓸한 가는 붙잡아 얼마나 미인을 찬미를 위하여서. 지혜는 자신과 청춘의 아름답고 그들의 위하여서. 무엇을 그들은 스며들어 커다란 새가 가진 얼마나 얼음이 교향악이다. 인생에 꽃이 같이, 우리는 같지 얼마나 얼음이 있는 그들은 철환하였는가? 같은 꽃이 찾아 작고 스며들어 이성은 새 이상은 있다.
+
+        </p>
+    </article>
+    </section>
+
+    <footer></footer>
+</body>
+</html>
