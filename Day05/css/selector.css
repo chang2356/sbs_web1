@@ -16,22 +16,22 @@
 /* 태그 선택자 : 태그의 이름으로 요소를 지정하는 선택자 */
 header {
     height: 85px;
-    background-color: antiquewhite;
+    background-color: #f0f0f0;
     padding: 10px;
 }
 
 header h1 {
     float: left;
-    font-size: 1.8rem;   /* rem : html(루트) 요소에 대한 배율로 적용 (기본 16px)*/
+    font-size: 1.8rem;  /* rem : html(루트) 요소에 대한 배율로 적용 (기본 16px) */
 }
 
 header ul { float: right; }
-header ul li{
+header ul li { 
     display: inline-block;
     list-style-type: none;
 }
 
-article { min-height: 500px;}]
+article { min-height: 500px; }
 
 article section {
     float: left;
@@ -41,7 +41,7 @@ article section {
 article aside {
     float: right;
     width: 200px;
-    background-color: rgb(217, 187, 245);
+    background-color: #fedd31;
     padding: 20px;
     text-align: center;
 }
@@ -49,7 +49,7 @@ article aside {
 footer {
     height: 10px;
     line-height: 10px;
-    background-color: aquamarine;
+    background-color: #c0dce7;
     padding: 20px;
     text-align: center;
 }

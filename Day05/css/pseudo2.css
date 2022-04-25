@@ -29,13 +29,13 @@ table.first td {
 }
 
 /* td 태그 중 첫번째 자식요소를 선택 */
-table.first td:first-child { width: 10px; }
+table.first td:first-child { width: 10%; }
 
 /* td 태그 중 2번째 자식요소를 선택 */
-table.first td:nth-child(2) { width: 70px; }
+table.first td:nth-child(2) { width: 70%; }
 
 /* td 태그 중 마지막 자식요소를 선택 */
-table.first td:last-child { width: 20px; }
+table.first td:last-child { width: 20%; }
 
 
 
