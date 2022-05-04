@@ -19,9 +19,9 @@ h1 { text-align: center; }
     font-size: 48px;
 }
 
-/* position: fixed; */
-.container .fixed {
-    position: fixed;        /* 브라우저를 기준으로 위치 설정 */
+/* position: sticky; */
+.container .sticky {
+    position: sticky;       
     border: 3px solid black;
 }
 
@@ -33,10 +33,10 @@ h1 { text-align: center; }
     z-index: -1;
 }
 
-.first { top: 0; left: 0; }
-.second { top: 0; right: 0; }
-.third { bottom: 0; left: 0; }
-.fourth { bottom: 0; right: 0; } 
+.first { top: 100px; float: left; background-color: red;}
+.second { top: 100px; float: right; background-color: green; }
+.third { top: 100px;  float: left; background-color: yellow;}
+.fourth { top: 100px;  float: right; background-color: blue;} 
 
 .fifth { top: 0; left: 500px; }
 .sixth { top: 200px; left: 500px; }
@@ -44,19 +44,9 @@ h1 { text-align: center; }
 .eighth { top: 600px; left: 500px; }
 
 
-/* 정가운데  : 가로/세로 가운데 */
-.center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* top, left 의 % 는 부모요소에 대한 비율 */
-    /* translate() 의 % 는 해당요소에 대한 비율 */
-    /* translate(x축, y축) */
-}
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -67,4 +57,12 @@ header {
     line-height: 80px;
     text-align: center;
     z-index: 10;
+}
+
+.box {
+    width: 1200px !important;
+    height: 300px !important;
+    margin-top: 80px !important;
+    border-radius: 0 !important;
+    background-color: royalblue;
 }
