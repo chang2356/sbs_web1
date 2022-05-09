@@ -1,0 +1,25 @@
+
+* { margin: 0; padding: 0; }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    animation: bg 8s infinite;
+}
+
+@keyframes bg {
+    0% { background-color: darksalmon;}
+    25% { background-color: yellowgreen;}
+    50% { background-color: indigo;}
+    750% { background-color: burlywood;}
+    100% { background-color: greenyellow;}
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+}
