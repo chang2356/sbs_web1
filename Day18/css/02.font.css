@@ -1,0 +1,71 @@
+
+/* font 타이포그래피 */
+/* 해당 명령어는 모두 상속됩니다. */
+
+/* 
+    color 색상 표시 방법 4가지
+    1. color name: 유명한 색의 고유이름을 표현 (color : red;)
+    2. hex number: rgb 값을 순서대로 10진법으로 표현 (color : #ffffff;)
+    3. rgd: rgb값을 순서대로 10진수 숫자로 표현 color : gba(252,124,215);
+    4. rgbe: rgbe(251,124,152,0.6) / 맨 뒤에 투명 값 숫자는 1=100%
+*/
+
+div {
+    /* 텍스트의 색상을 변경해주는 명령어 */
+    /* color: red; */
+    /* color: #124554; */
+    /* color: rgb(255, 0, 0); */
+    color: rgba(255, 0, 0, 0.2);
+}
+
+
+/* text-aglin */
+/* 해당 선택자가 얼마만큼의 영역을 가지고 있는지 체크(inline과 block요소도 체크) */
+span {
+    text-align: right;
+}
+
+div {
+    text-align: center;
+}
+
+/* font-weight */
+/* default=normal (regular) */
+/* bold-700 / regular-400 / light-300 */
+/* 영문이나 숫자로 표시 */
+/* 백단위로 표시한다 */
+span {
+    font-weight: 300;
+}
+
+div {
+    font-weight: bold;
+}
+
+/* line-height */
+/* 행간 표시이며 글자는 바닥에 붙어있습니다. */
+/* 단위를 사용하거나 숫자만 사용하며 숫자 사용시 배수로 인식합니다. (배수의 기준은 font-size) */
+span {
+    line-height: 30px;
+}
+div {
+    font-size: 20px;
+    line-height: 4;
+}
+
+/* font */
+/* font-weight font-size/line-height font-family */
+span {
+    font: bold 30px/1.5 arial, sans-serif;
+}
+
+/* font-size */
+/* px, %, em, rem, vw, vh */
+
+span {
+    font-size: 5vh;
+}
+
+div {
+    font-size: 5vw;
+}
