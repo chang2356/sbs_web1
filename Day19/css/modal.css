@@ -8,7 +8,7 @@ html,body{
 }
 
 .scroll {
-    height: 200px;
+    height: 2000px;
     background: linear-gradient(red,blue);
 }
 
