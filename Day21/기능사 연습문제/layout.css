@@ -33,24 +33,30 @@ a{
     background:#6a38ff;
     text-align:center;
     padding:10px 0;
-    position: relative;
+    position:relative;
 }
 #header nav ul li a{
     color:#fff;
 }
 
-#header nav .sub {
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 41px;
-    transition: height 0.5s;
+#header nav .sub{
+    height:0;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:41px;
+    transition:height 0.5s;
+}
+#header nav ul li:hover .sub{
+    height:123px;
 }
 
-#header nav ul li.hover .sub {
-    height: 123px;
-} 
+
+
+
+
+
+
 
 #ad_1{
     height:300px;
@@ -58,9 +64,9 @@ a{
 }
 
 #banner {
-    padding-bottom: 20px;
-    border-bottom: 1px solid gray;
-    margin-bottom: 20px;
+    padding-bottom:20px;
+    border-bottom:1px solid gray;
+    margin-bottom:20px;
 }
 
 #banner > article{
@@ -126,25 +132,29 @@ a{
     height:160px;
 }
 
-#footer {}
+#footer{}
 
-#footer .ft_logo {
-    float: left;
-    margin-right: 50px;
+#footer .ft_logo{
+    float:left;
+    margin-right:50px;
 }
-#footer .ft_right {
-    float: left;
-}
-#footer .ft_fight ul {
-    width: 1000px;
-    margin-bottom: 50px;
-}
-#footer .ft_fight ul > li {
-    float: left;
-    margin-right: 50px;
-}
-#footer .ft_fight ul > li >a {}
 
-#footer .ft_fight p {
-    text-align: center;
+#footer .ft_right{
+    float:left;
+}
+
+#footer .ft_right ul{
+    width:1000px;
+    margin-bottom:50px;
+}
+
+#footer .ft_right ul > li{
+    float:left;
+    margin-right:20px;
+}
+
+#footer .ft_right ul > li > a{}
+
+#footer .ft_right p{
+    text-align:center;
 }

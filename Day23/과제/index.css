@@ -1,0 +1,106 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ol, ul, dl {list-style: none;}
+
+
+
+
+.visual{
+    /* height: 452px; */
+    background: url("main_bg.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-style: 18px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.visual h2{
+    font-size: 60px;
+    margin-bottom: 60px;
+    padding-top: 116px;
+}
+
+.visual p{
+    line-height: 40px;
+    padding-bottom: 116px;
+}
+
+.ebook_list {}
+.ebook_list .inner{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* padding & border 사용시 해당 선택자가 
+       width & hight 값을 스스로 가지고 있는지 체크하면 좋다  
+    */
+}
+.ebook_list h3{
+    font-size: 20px;
+    color: #9d9d9d;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* text-transform 
+       -none / capitalize / uppercase / intal / inherit
+       -default : none
+       -none : 입력한 그대로 출력
+       -capitalize : 단어의 첫번째 글자를 대문자로 바꿔서 출력
+       -uppercase : 모든 글자를 대문자로 바꿔서 출력
+       -lowrcase : 모든 글자를 소문자로 바꿔서 출력
+       -intal : 초기화 = 기본 값으로 설정
+       -inherit : 상속 = 부모 요소와 상속 값을 받음
+    */
+    margin-bottom: 50px;
+}
+.ebook_list .ebook{}
+
+
+.ebook_list .ebook {}
+
+.ebook_list .ebook ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ebook_list .ebook ul > li {
+    width: 210px;
+    margin-bottom: 60px;
+}
+
+.ebook_list .ebook ul > li div:first-child {
+    min-height: 298px;
+    margin-bottom: 10px;
+}
+
+.ebook_list .ebook ul > li > p {
+    font-style: 20px;
+    color: #0075d8;
+    margin-bottom: 10px;
+    min-height: 81px;
+}
+
+.ebook_list .ebook ul > li button {
+    display: block;
+    width: 100%;
+    height: 36px;
+    outline: none;
+    background: #fff;
+    border: 1px  solid #0075d8;   
+    font-size: 14px;
+    font-weight: bold;
+    color: #0075d8;
+    text-transform: capitalize;
+    /* button 태그의 cursor
+        -default = cursor:default
+    */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 1s, color 2s;
+}
+
+.ebook_list .ebook ul > li button:hover {
+    background: #0065d8;
+    color: #fff;
+}
