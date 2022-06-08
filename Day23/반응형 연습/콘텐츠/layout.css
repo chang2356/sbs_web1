@@ -21,6 +21,9 @@ body {
     flex-direction: column;
     background: url("img/visual_bg.jpg") no-repeat center top fixed;
     background-size: cover;
+    /* background cover
+        :full cover 
+    */
     text-align: center;
     margin-bottom: 70px;
 }
